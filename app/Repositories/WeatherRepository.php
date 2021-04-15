@@ -11,7 +11,7 @@ class WeatherRepository
     {
         $diffDate = new Carbon();
         $diffDate->subMinutes($minutesDiff);
-
+        
         return Weather::where('city_name', strtolower($cityName))
             ->where('created_at', '>=', $diffDate)
             ->orderBy('created_at', 'desc')
@@ -20,6 +20,7 @@ class WeatherRepository
 
     public static function createWeatherByCityNameAndData(string $cityName, array $cityData): void
     {
+
         $weather = new Weather();
         $weather->city_name = strtolower($cityName);
         $weather->city_data = json_encode($cityData);
