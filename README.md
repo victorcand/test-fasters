@@ -13,10 +13,42 @@
 
 ### Response
 
-<p>{"coord":{"lon":-46.6361,"lat":-23.5475},"weather":[{"id":803,"main":"Clouds","description":"broken clouds","icon":"04d"}],"base":"stations","main": <p>
-<p>{"temp":294.84,"feels_like":294.74,"temp_min":294.15,"temp_max":296.48,"pressure":1022,"humidity":64},"visibility":10000,"wind":{"speed":4.63,"deg":70},"clouds": <p>
-<p>{"all":75},"dt":1618496099,"sys":{"type":1,"id":8394,"country":"BR","sunrise":1618478402,"sunset":1618519954},"timezone":-10800,"id":3448439,"name":"S\u00e3o Paulo","cod":200}<p>
-
+{
+    "coord":{"lon":-46.6361,"lat":-23.5475},
+    "weather":[{
+        "id":803,
+        "main":"Clouds",
+        "description":"broken clouds",
+        "icon":"04d"
+        }],
+        "base":"stations",
+        "main":{
+            "temp":294.84,
+            "feels_like":294.74,
+            "temp_min":294.15,
+            "temp_max":296.48,
+            "pressure":1022,
+            "humidity":64
+            },
+            "visibility":10000,
+            "wind":{
+                "speed":4.63,
+                "deg":70
+                },
+                "clouds":{"all":75},
+                "dt":1618496099,
+                "sys":{
+                    "type":1,
+                    "id":8394,
+                    "country":"BR",
+                    "sunrise":1618478402,
+                    "sunset":1618519954
+                    },
+                    "timezone":-10800,
+                    "id":3448439,
+                    "name":"S\u00e3o Paulo",
+                    "cod":200
+}
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
