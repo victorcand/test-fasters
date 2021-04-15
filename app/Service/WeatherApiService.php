@@ -23,7 +23,6 @@ class WeatherApiService
         if (!empty($weatherInCache)) {
             return json_decode($weatherInCache->city_data, true);
         }
-
         $apiResponse = $this->getApiResponseData();
 
         WeatherRepository::createWeatherByCityNameAndData($this->cityName, $apiResponse);
@@ -34,11 +33,14 @@ class WeatherApiService
     private function getApiResponseData(): array
     {
         $apiUrl = self::API_URL . "?q={$this->cityName}&appid=" . self::API_KEY;
-
         $client = new Client();
         $res = $client->get($apiUrl);
 
         return json_decode($res->getBody()->getContents(), true);
     }
 
+    public function getCityName()
+    {
+        return $this->cityName;
+    }
 }
