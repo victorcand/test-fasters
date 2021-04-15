@@ -7,7 +7,7 @@
 
 ### Request
 
-`GET /weather/{cityName}/`
+`GET 'http://127.0.0.1:8000/weather/{cityName}/`
 
 <p>Após realizar na sua URL o comando acima (Necessário estar com um servidor local para funcionar está API), será consumido os dados do API OpenWeather e será salvo no banco de dados do MySQL. Assim, quando realizar a pesquisa novamente para a mesma cidade em um periodo de 20 minutos, o retorno das informações serão mais rápidas e com as mesmas informações.</p>
 
